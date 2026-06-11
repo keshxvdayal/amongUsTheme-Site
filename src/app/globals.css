@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+  font-family: 'Shantell';
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'Shantell';
+  src: url('./assets/ShantellSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nine';
+  src: url('./assets/nine0.ttf') format('truetype');
+}
+
+@keyframes starMove {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slider {
+  animation: slider 20s linear infinite;
+}
